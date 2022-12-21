@@ -1,0 +1,73 @@
+package com.kcs.kcswt;
+import jakarta.xml.bind.annotation.XmlRootElement;
+@XmlRootElement
+public class Alien
+{
+	
+		private String name;
+		private int phone;
+		private Object Id;
+		private String address1;
+		private String address2;
+		private String password;
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public int getphone() {
+			return phone;
+		}
+		public void setphone(int phone) {
+			this.phone = phone;
+		}
+		
+		
+		public int getId() {
+			// TODO Auto-generated method stub
+			return (int) Id;
+		}
+		public String getaddress1() {
+			return address1;
+		}
+		public void setaddress1(String address1) {
+			this.address1=address1 ;
+		}
+		public String getaddress2() {
+			return address2;
+		}
+		public void setaddress2(String address2) {
+			this.address2=address2 ;
+		}
+		public String getpassword() {
+			return password;
+		}
+		public void setpassword(String password) {
+			this.password=password ;
+		}
+		
+		
+		@Override
+		public String toString() {
+			return "Alien [name=" + name + ", phone=" +phone + ",address1="+address1+",address2=" +address2+"]";
+		}
+		public void setId(int Id) {
+			this.Id=Id;
+			
+		}
+		public int getPhone() {
+			return phone;
+		}
+		public void setPhone(int phone) {
+			this.phone = phone;
+		}
+		
+		
+		
+		
+
+	
+
+
+}
